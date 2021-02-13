@@ -1,0 +1,27 @@
+<div id="art">
+
+    <header>
+        <h1>Art Books</h1>
+        <nav>
+            <%= link_to "Home", arts_path %>
+            <%= link_to "Update", edit_art_path %>
+            <%= link_to "Delete", @art, :method => 'delete' %>
+        </nav>
+    </header>
+
+    <div id="art-container">
+        <div id="image-div">
+            <% if @art.image.present? %>
+                <img src=<%=@art.image%> id="art-img" />
+            <% else %>
+                <%= image_tag "https://via.placeholder.com/400x450?text=#{@art.name}" %>
+            <% end %>
+        </div>
+        <div id="info-div">
+            <p>Form: <%=@art.form%></p>
+            <p>Name: <%=@art.name%></p>
+            <p>Artist: <%=@art.artist%></p>
+            <p>Year: <%=@art.year%></p>
+        </div>
+    </div>
+</div>

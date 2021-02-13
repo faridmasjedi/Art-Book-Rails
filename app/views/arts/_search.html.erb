@@ -1,0 +1,19 @@
+<%= form_tag( root_path , :method => :post) do %>
+    <%= label_tag :form %>
+    <%= select_tag :form, raw("
+    <option>all</option>
+    <option>Paint</option>
+    <option>Architecture</option>
+    <option>Sculpture</option>
+    <option>Literature</option>
+    <option>Music</option>
+    <option>Performance</option>
+    <option>Cinema</option>
+    ") %>
+    <%= label_tag :name %>
+    <%=text_field_tag :name%>
+    <%=label_tag :artist %>
+    <%=text_field_tag :artist %>
+    <%= submit_tag "Search" %>
+<% end %>
+

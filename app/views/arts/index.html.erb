@@ -1,0 +1,30 @@
+<div id="home">
+
+    <header>
+        <h1>Art Books</h1>
+        <nav>
+            <%=link_to "Home", root_path %>
+            <%=link_to "Add", new_art_path %>
+        </nav>
+    </header>
+    <div id="filter">
+        <h2>Search Bar</h2>
+        <%= render :partial => 'search' %>
+    </div>
+
+    <div id="container">
+
+        <% @arts.shuffle.each do |art| %>
+            <div id="list">
+                <% if art.image.present?%>
+                    <a href=<%="/arts/#{art.id}"%>>
+                        <img src=<%=art.image%> id="imageHome" />
+                    </a>
+                <% else %>
+                    <%=link_to image_tag("https://via.placeholder.com/200x300?text=#{art.name}"), art %>
+                <% end %>
+                <p><%=link_to art.name, art%></p>
+            </div>
+        <% end %>
+    </div>
+</div>
