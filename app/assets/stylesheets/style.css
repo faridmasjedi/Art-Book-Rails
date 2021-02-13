@@ -144,7 +144,7 @@ button {
   font-size: 15px;
 }
 
-@media (max-width: 955px) {
+@media (max-width: 940px) {
   #filter form {
     display: flex;
     flex-direction: column;

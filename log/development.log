@@ -7073,3 +7073,75 @@ Processing by ArtsController#index as HTML
 Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for ::1 at 2021-02-13 15:59:09 +1100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/fm/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.6ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (0.8ms)
+  Rendered arts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 169ms (Views: 143.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 15:59:44 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (1.3ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (2.9ms)
+  Rendered arts/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 68ms (Views: 59.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 16:00:05 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.5ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.3ms)
+  Rendered arts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 16:00:35 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.4ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.2ms)
+  Rendered arts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 16:01:05 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.7ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.3ms)
+  Rendered arts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 16:01:11 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.5ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.3ms)
+  Rendered arts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 16:02:52 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.5ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.2ms)
+  Rendered arts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.5ms)
+
+
