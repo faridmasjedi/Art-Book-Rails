@@ -6711,6 +6711,7 @@ Processing by ArtsController#index as HTML
 Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.4ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2021-02-13 15:31:32 +1100
   
 ActiveRecord::NoDatabaseError (FATAL:  database "art-books-rails_development" does not exist
@@ -6928,5 +6929,125 @@ Processing by ArtsController#index as HTML
   Rendered arts/_search.html.erb (1.8ms)
   Rendered arts/index.html.erb within layouts/application (5.2ms)
 Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 0.6ms)
+=======
+Started GET "/" for ::1 at 2021-02-13 14:54:15 +1100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (2.0ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.7ms)
+  Rendered arts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 258ms (Views: 226.1ms | ActiveRecord: 10.2ms)
+
+
+Started POST "/" for ::1 at 2021-02-13 14:54:19 +1100
+Processing by ArtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ivfcLT4x27Xl4e3WwhGZRL4pLR72qkey55s77d20I2uxoCxEnTW/Ikgn4bBOGxWSrvc9pdISOT0Egwri5ngi9w==", "form"=>"Literature", "name"=>"", "artist"=>"", "commit"=>"Search"}
+  [1m[36mArt Load (0.6ms)[0m  [1m[34mSELECT * FROM arts WHERE form='Literature' AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (0.9ms)
+  Rendered arts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/arts/22" for ::1 at 2021-02-13 14:54:20 +1100
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArt Load (2.9ms)[0m  [1m[34mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/arts_controller.rb:26
+  Rendering arts/show.html.erb within layouts/application
+  Rendered arts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 17.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/arts" for ::1 at 2021-02-13 14:54:32 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (2.2ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.0ms)
+  Rendered arts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/" for ::1 at 2021-02-13 14:54:39 +1100
+Processing by ArtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A2sLG1B/wFKR/ZRNHAl9/uP9fJlgDgrGvyDqCokaS7V5ntO1qG0pSINhvKtSnPcjBGE5vvbJj3o/JiPG6/+Qew==", "form"=>"all", "name"=>"Kafka on the Shore", "artist"=>"", "commit"=>"Search"}
+  [1m[36mArt Load (0.5ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name='Kafka on the Shore' AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.0ms)
+  Rendered arts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 14:54:41 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (1.0ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.0ms)
+  Rendered arts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 14:55:53 +1100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (1.1ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.1ms)
+  Rendered arts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 204ms (Views: 172.2ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 14:56:19 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.5ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (0.9ms)
+  Rendered arts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+>>>>>>> cffac20179bc5f0e1718a7a1d9a2279c463f6f51
+
+
+Started GET "/" for ::1 at 2021-02-13 15:35:11 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/fm/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.8ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (0.8ms)
+  Rendered arts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 123ms (Views: 104.0ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/" for ::1 at 2021-02-13 15:35:18 +1100
+Processing by ArtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aHmfQHo+UZqTRKgzTDtq1QR3frv8nCUiOK7qI2Umz4KGbDcH5Ka+gYyYS42I+UHaohvH4yYiTbzODm/6bSuw7A==", "form"=>"Architecture", "name"=>"", "artist"=>"", "commit"=>"Search"}
+  [1m[36mArt Load (0.4ms)[0m  [1m[34mSELECT * FROM arts WHERE form='Architecture' AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.3ms)
+  Rendered arts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/" for ::1 at 2021-02-13 15:35:21 +1100
+Processing by ArtsController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VBcZwxr3ySpq3MY0XxjIqRsUOeX33OkUqSHg24T6hIi6ArGEhG8mMXUAJYqb2uOmvXiAvS1igYpfgWUCjPf75g==", "form"=>"Sculpture", "name"=>"", "artist"=>"", "commit"=>"Search"}
+  [1m[36mArt Load (0.9ms)[0m  [1m[34mSELECT * FROM arts WHERE form='Sculpture' AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.1ms)
+  Rendered arts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.9ms)
 
 
