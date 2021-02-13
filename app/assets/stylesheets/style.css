@@ -145,7 +145,7 @@ button {
 }
 
 @media (max-width: 940px) {
-  #filter {
+  #filter form {
     display: flex;
     flex-direction: column;
     align-items: center;

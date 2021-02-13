@@ -7051,3 +7051,25 @@ Processing by ArtsController#index as HTML
 Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/" for ::1 at 2021-02-13 15:52:35 +1100
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/fm/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (15.8ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (2.3ms)
+  Rendered arts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 199ms (Views: 155.3ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/" for ::1 at 2021-02-13 15:54:57 +1100
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.6ms)[0m  [1m[34mSELECT * FROM arts WHERE form=form AND name=name AND artist=artist;[0m
+  ↳ app/models/art.rb:25
+  Rendering arts/index.html.erb within layouts/application
+  Rendered arts/_search.html.erb (1.4ms)
+  Rendered arts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.6ms)
+
+
